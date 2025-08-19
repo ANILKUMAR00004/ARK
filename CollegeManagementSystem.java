@@ -57,7 +57,7 @@ public class CollegeManagementSystem {
     private static void addStudent() {
         System.out.print("Enter Student ID: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
         System.out.print("Enter Student Name: ");
         String name = scanner.nextLine();
         System.out.print("Enter Course Name: ");
@@ -78,7 +78,7 @@ public class CollegeManagementSystem {
     private static void searchStudentById() {
         System.out.print("Enter Student ID to search: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); 
         boolean found = false;
         for (Student student : students) {
             if (student.getId() == id) {
@@ -92,4 +92,5 @@ public class CollegeManagementSystem {
         }
     }
 }
+
 
