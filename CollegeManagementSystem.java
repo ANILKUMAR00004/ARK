@@ -22,7 +22,6 @@ class Student {
         return "Student ID: " + id + "\n Name: " + name + "\n Course: " + course;
     }
 }
-
 public class CollegeManagementSystem {
     private static ArrayList<Student> students = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
@@ -36,7 +35,7 @@ public class CollegeManagementSystem {
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine();  // consume newline
+            scanner.nextLine();  
             switch (choice) {
                 case 1:
                     addStudent();
@@ -93,3 +92,4 @@ public class CollegeManagementSystem {
         }
     }
 }
+
